@@ -11,6 +11,7 @@ import uuid
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
+qdrant_api_key = os.getenv("QDRANT_API_KEY")
 
 st.title("AskMyPDF - Chat with your PDF")
 
@@ -70,7 +71,8 @@ if uploaded_file:
 
             vector_db = QdrantVectorStore.from_documents(
                 documents=split_docs,
-                url="http://localhost:6333",
+                url="https://a3619777-b68b-4f91-95ed-fbf0c0c28815.us-west-1-0.aws.cloud.qdrant.io",
+                api_key=qdrant_api_key,
                 collection_name=file_name,
                 embedding=embedding_model
             )
