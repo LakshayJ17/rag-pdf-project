@@ -10,8 +10,8 @@ from openai import OpenAI
 import uuid
 
 load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
-qdrant_api_key = os.getenv("QDRANT_API_KEY")
+api_key = os.getenv("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY")
+qdrant_api_key = os.getenv("QDRANT_API_KEY") or st.secrets.get("QDRANT_API_KEY")
 
 st.title("AskMyPDF - Chat with your PDF")
 
