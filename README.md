@@ -12,6 +12,12 @@ Chat with your PDF using OpenAI and Qdrant, right in your browser!
 
 ---
 
+## Try it Online
+
+You can try the app online here: [https://ask-mypdf.streamlit.app/](https://ask-mypdf.streamlit.app/)
+
+---
+
 ## How to Run Locally
 
 1. **Clone this repo**
