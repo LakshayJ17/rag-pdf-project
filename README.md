@@ -16,7 +16,7 @@ Chat with your PDF using OpenAI and Qdrant, right in your browser!
 
 1. **Clone this repo**
     ```sh
-    git clone https://github.com/yourusername/rag-pdf-project.git
+    git clone https://github.com/LakshayJ17/rag-pdf-project.git
     cd rag-pdf-project
     ```
 
@@ -27,11 +27,11 @@ Chat with your PDF using OpenAI and Qdrant, right in your browser!
 
 3. **Set up your `.env` file**
     ```
-    =OPENAI_API_KEYyour-openai-key
+    OPENAI_API_KEY=your-openai-key
     QDRANT_API_KEY=your-qdrant-key
     ```
 
 4. **Run the app**
     ```sh
-    streamlit run [main.py](http://_vscodecontentref_/0)
+    streamlit run main.py
     ```
